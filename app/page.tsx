@@ -1,9 +1,11 @@
+import Link from "next/link";
 
-
-export default function Home() {
+const page = () => {
   return (
-    <div>
-      <h1>HELLO, THIS IS SNAP-CV</h1>
+    <div className="text-4xl text-center">
+      Go to <Link href={"sections"} className="underline">Section</Link>
     </div>
   );
-}
+};
+
+export default page;

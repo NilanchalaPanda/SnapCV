@@ -14,7 +14,7 @@ const { Schema, model } = mongoose;
 
 const headerSchema = new Schema({
   headerUserID: { type: Schema.Types.ObjectId, ref: "User" },
-  name: { type: String, required: true },
+  fullName: { type: String, required: true },
   phoneNo: { type: Number, required: true },
   emailID: { type: String, required: true },
   githubLink: { type: String },
