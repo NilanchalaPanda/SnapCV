@@ -1,7 +1,7 @@
 import { Header } from "@/components";
 import React from "react";
 
-const Sections = () => {
+const sections: React.FC = () => {
   return (
     <div>
       <Header />
@@ -9,4 +9,4 @@ const Sections = () => {
   );
 };
 
-export default Sections;
+export default sections;
