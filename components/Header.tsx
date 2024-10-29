@@ -8,12 +8,12 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@radix-ui/react-dialog";
-import { DialogHeader } from "./ui/dialog";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const Header: React.FC = () => {
   const [userDetails, setUserDetails] = useState<UserDetails | null>(null);
@@ -31,10 +31,10 @@ const Header: React.FC = () => {
         <div className="flex flex-col items-center">
           <Dialog>
             <DialogTrigger>
-              <button className="mt-4 flex items-center rounded-md border border-gray-400 bg-gray-400/50 p-2 hover:cursor-pointer">
+              <div className="mt-4 flex items-center rounded-md border border-gray-400 bg-gray-400/50 p-2 hover:cursor-pointer">
                 <PlusCircle className="mr-2 h-6 w-6 text-black/50" />
                 <span>Add User Details</span>
-              </button>
+              </div>
             </DialogTrigger>
             <DialogContent>
               <DialogHeader>

@@ -1,4 +1,4 @@
-import { Header } from "@/components";
+import Header from "@/components/Header";
 import React from "react";
 
 const sections: React.FC = () => {
